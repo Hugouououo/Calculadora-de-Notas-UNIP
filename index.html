@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UNIP Calc</title>
+</head>
+<body>
+    <header></header>
+    
+    <main>
+        <div class="div-n1">
+            <p>Insira sua nota da NP1:</p>
+            <input type="number" name="nota_1" id="n1">
+        </div>
+        <div class="div-n2">
+            <p>Insira sua nota da NP2:</p>
+            <input type="number" name="nota_2" id="n1">
+        </div>
+        <div class="div-trab">
+            <p>Insira a nota de trabalho / ponto extra:</p>
+            <input type="number" name="nota_trab" id="trab">
+        </div>
+        <button type="submit" name="calcular_media">Calcular</button>
+        
+        <div class="resultado">
+            <p>Sua média foi:</p>
+            <!--Aqui vão as variaveis-->
+            <p id="media">6</p>
+            <p id="resultado">Você ficou de exame.</p>
+        </div>
+
+        <div class="bloco-exame" hidden> <!--hidden por padrão-->
+            <div class="div-nota-exame">
+                <p>Insira sua nota do exame:</p>
+                <input type="number" name="nota_exame" id="ex">
+            </div>
+            <div class="div-trab-exame">
+                <p>Insira a nota de trabalho / ponto extra:</p>
+                <input type="number" name="trab_exame" id="trab-ex">
+            </div>
+            <button type="submit" name="calcular_exame">Calcular</button>
+
+            <div class="resultado-exame">
+                <p>Sua média foi:</p>
+                <!--Aqui vão as variaveis-->
+                <p id="media-exame">6</p>
+                <p id="resultado-final">Você ficou de exame.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+<script src="script.js"/></script>
+</html>
+<!--isso provavelmente seria mais fácil c algum framework-->
