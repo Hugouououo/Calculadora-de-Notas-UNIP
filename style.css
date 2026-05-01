@@ -1,8 +1,31 @@
 :root{
-
+    --cor-fundo: black;
+    --cor-texto: whitesmoke;
+    --cor-texto-apagado: gray
 }
 
+::placeholder{
+    color: var(--cor-texto-apagado);
+}
 body{
-    color: white;
-    background-color: black;
+    color:var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+main{
+    background-color: rgb(43, 43, 43);
+}
+
+/* Divs dos inputs */
+.div-n1{
+    background-color: darkgreen;
+}
+.div-n2{
+    background-color: brown;
+}
+.div-trab{
+    background-color: darkcyan;
+}
+.div-resultado{
+    background-color: blue;
 }

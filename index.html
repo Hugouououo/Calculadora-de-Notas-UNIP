@@ -10,34 +10,40 @@
     <header></header>
     
     <main>
+        <!-- Inputs -->
         <div class="div-n1">
-            <p>Insira sua nota da NP1:</p>
-            <input type="number" name="nota_1" id="n1">
+            <label for="n1">Insira sua nota da NP2:</label>
+            <input type="number" name="nota_1" id="n1" placeholder="0,0">
         </div>
         <div class="div-n2">
-            <p>Insira sua nota da NP2:</p>
-            <input type="number" name="nota_2" id="n1">
+            <label for="n2">Insira sua nota da NP2:</label>
+            <input type="number" name="nota_2" id="n2" placeholder="0,0">
         </div>
         <div class="div-trab">
-            <p>Insira a nota de trabalho / ponto extra:</p>
-            <input type="number" name="nota_trab" id="trab">
+            <label for="trab">Trabalho / Ponto extra:</label>
+            <input type="number" name="nota_trab" id="trab" placeholder="0,0">
         </div>
-        <button type="submit" name="calcular_media">Calcular</button>
+
+        <!-- Calcular -->
+        <button type="submit">Calcular</button>
         
-        <div class="resultado">
+        <!-- Resultado -->
+        <div class="div-resultado">
             <p>Sua média foi:</p>
             <!--Aqui vão as variaveis-->
             <p id="media">6</p>
             <p id="resultado">Você ficou de exame.</p>
         </div>
 
+        <!--Exibe se ficar de exame -->
         <div class="bloco-exame" hidden> <!--hidden por padrão-->
+            <hr>
             <div class="div-nota-exame">
-                <p>Insira sua nota do exame:</p>
-                <input type="number" name="nota_exame" id="ex">
+                <label for="ex">Insira a nota do Exame:</label>
+                <input type="number" name="nota_exame" id="ex" placeholder="0,0">
             </div>
             <div class="div-trab-exame">
-                <p>Insira a nota de trabalho / ponto extra:</p>
+                <label for="trab-ex">Trabalho / Ponto extra:</label>
                 <input type="number" name="trab_exame" id="trab-ex">
             </div>
             <button type="submit" name="calcular_exame">Calcular</button>
